@@ -1,0 +1,7 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\Kolleksiyonlar\bin\Debug\Kolleksiyonlar.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\Kolleksiyonlar\bin\Debug\Kolleksiyonlar.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\Kolleksiyonlar\bin\Debug\Kolleksiyonlar.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\Kolleksiyonlar\obj\Debug\Kolleksiyonlar.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\Kolleksiyonlar\obj\Debug\Kolleksiyonlar.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\Kolleksiyonlar\obj\Debug\Kolleksiyonlar.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\Kolleksiyonlar\obj\Debug\Kolleksiyonlar.pdb

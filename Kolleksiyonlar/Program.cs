@@ -296,13 +296,22 @@ namespace Kolleksiyonlar
             Sondaki .ToList() aradığımız kritere eşleşen tüm girdileri <T> generic tipinde liste olarak döndürür.
              */
 
-            string liste2 = markalar.Where(x => x.Contains("BMW")).FirstOrDefault();
+          //  string liste2 = markalar.Where(x => x.Contains("BMW")).FirstOrDefault();
+            string arananMarka = markalar.Where(x => x.Contains("B")).FirstOrDefault();
 
             /*
            Sondaki .FirstOrDefault() metodu aradığımız kriter ile eşleşen ilk kaydı döndürür.
             Ardığımız kritere uyan kayıt yok ise <T> nin default değerini döndürür.
              
              */
+
+            markalar.Remove("123"); //belirttiğimiz değeri listeden siler
+            // markalar.RemoveAt(2); //belirttiğimiz indeks numarasındaki elemanı siler.
+            markalar.RemoveAt(markalar.Count-1);// sondaki elemanı siler
+
+            markalar.Sort();// listeyi (alfabetik) sıralar
+            markalar.Reverse();// listeyi tersine çevirir
+
 
             Console.ReadKey();
 

@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace ReferansTipleri
 {
@@ -15,8 +18,106 @@ namespace ReferansTipleri
         public string plaka;
         public int fiyat;
         public bool stokta = true;
+        private int hiz = 0; //kapsülleme
+        public int maximumHiz = 190;
+
+        //methods 
+        public string Calistir()
+        {
+            return "Araba çalıştı.";
+        }
+
+        //Setter içerdeki bilgiye atamak
+        public void Hizlan(int miktar)
+        {
+            hiz += miktar;
+
+            if (hiz > maximumHiz)
+            { 
+                hiz = maximumHiz;
+            }
+        }
+
+        public void Yavasla(int miktar)
+        {
+            hiz -= miktar;
+
+            if (hiz < 0)
+            {
+                hiz = 0;
+            }
+        }
+
+        //GETTER disariya bilgi veren
+        public int HizGoster()
+        {
+            return hiz;
+        }   
+
     }
-    
+
+    class Kus
+    {
+        //fields
+        public string cinsi;
+        public bool ucabilir = true;
+        public bool yüzebilir = false;
+
+        //methods - class içerisinde yaplacak işlemler
+        public string SesCikar()
+        {
+            return "cik cik";
+        }
+
+        public string Beslen()
+        {
+            return "Kuş Beslendi.";
+        }
+
+        public void Yuz()
+        {
+
+        }
+
+    }
+
+    class Ogrenci
+    {
+        //field
+        //propfull yaz
+        private int ogrID;
+        //property
+        public int OgrID
+        {
+            get { return ogrID; }
+            set { ogrID = value; }
+        }
+       
+        //prop yaz özelleştirilmeyecekse
+        public string AdSoyad { get; set; }
+
+        public DateTime DogumTarihi { get; set; }
+
+        public DateTime KayitTarihi { get; set; }
+
+        // public double DiplomaNotu { get; set; }
+
+        private double diplomaNotu;
+
+        public double DiplomaNotu
+        {
+            get { return diplomaNotu; }
+            set 
+            {
+                if (value < 0)
+                    diplomaNotu = 0;
+                else
+                    diplomaNotu = value; 
+            }
+        }
+
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -72,12 +173,35 @@ namespace ReferansTipleri
                 Console.WriteLine(intDizi2[i]);
             }
 
-            Araba ferrari = new Araba();
+            Araba araba1 = new Araba();
 
-            ferrari.
+            araba1.marka = "BMW";
+            araba1.model = "E60";
+            araba1.fiyat = 1700000;
+            araba1.maximumHiz = 240;
+            // araba1.hiz = 50;,
+            araba1.Hizlan(25);
+            araba1.Hizlan(15);
+            araba1.Hizlan(25);
+            araba1.Yavasla(10);
 
+            Console.WriteLine("Araba1 in mevcut hızı: " + araba1.HizGoster());
 
+            Araba araba2 = new Araba();
 
+            araba2.marka = "Mercedes";
+            araba2.model = "GT43";
+            araba2.fiyat =  1500000;
+
+            // araba1 = araba2; // araba1 de artık araba2 ile aynı hafıza alanını gösteriyor. araba1 in önceden atanan verilerinin bulunduğu alanın bağlantısı koptu. GC tarafından bu veriler yok edilecek.
+
+            // araba1.fiyat = 3000000;
+
+            // Console.WriteLine(araba2.fiyat);
+
+            //Ogrenci ogr1 = new Ogrenci();
+            //ogr1.OgrID = -100;
+            //Console.WriteLine(ogr1.OgrID);
         }
     }
 }

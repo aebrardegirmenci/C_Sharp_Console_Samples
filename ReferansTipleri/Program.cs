@@ -9,9 +9,9 @@ using System.Web;
 
 namespace ReferansTipleri
 {
-   internal class Araba
+    internal class Araba
     {
-      //fields (alanlar)
+        //fields (alanlar)
         //int id;
         public string marka;
         public string model;
@@ -33,7 +33,7 @@ namespace ReferansTipleri
             hiz += miktar;
 
             if (hiz > maximumHiz)
-            { 
+            {
                 hiz = maximumHiz;
             }
         }
@@ -52,7 +52,7 @@ namespace ReferansTipleri
         public int HizGoster()
         {
             return hiz;
-        }   
+        }
 
     }
 
@@ -92,7 +92,7 @@ namespace ReferansTipleri
             get { return ogrID; }
             set { ogrID = value; }
         }
-       
+
         //prop yaz özelleştirilmeyecekse
         public string AdSoyad { get; set; }
 
@@ -107,15 +107,49 @@ namespace ReferansTipleri
         public double DiplomaNotu
         {
             get { return diplomaNotu; }
-            set 
-            {
-                if (value < 0)
-                    diplomaNotu = 0;
-                else
-                    diplomaNotu = value; 
-            }
+            //set 
+            //{
+            //    if (value < 0)
+            //        diplomaNotu = 0;
+            //    else
+            //        diplomaNotu = value; 
+            //}
         }
 
+        public double vizeNotu { get; set; }
+
+        public double finalNotu { get; set; }
+
+        public double NotGoster()
+        {
+            diplomaNotu = (vizeNotu * 0.4) + (finalNotu * 0.6);
+            return (vizeNotu * 0.4) + (finalNotu * 0.6);
+        }
+
+    }
+
+    class Urun
+    {
+        int urunID = 0; //alan - field
+
+        public int UrunID { get; set; } //degiskenler kücük propertyler buyuk harfle
+
+        public string Marka { get; set; } // özellik - property
+
+        private double fiyat;
+
+        public double Fiyat
+        {
+            get { return fiyat; }
+            set
+            {
+                if (value < 0)
+                    fiyat = value * (-1);
+                else
+                    fiyat = value; 
+            }
+
+        }
     }
 
     internal class Program
@@ -199,9 +233,27 @@ namespace ReferansTipleri
 
             // Console.WriteLine(araba2.fiyat);
 
-            //Ogrenci ogr1 = new Ogrenci();
+
             //ogr1.OgrID = -100;
             //Console.WriteLine(ogr1.OgrID);
+
+            Ogrenci ogr1 = new Ogrenci();
+            ogr1.AdSoyad = "ahmet";
+            // ogr1.DiplomaNotu = 75;
+
+            ogr1.vizeNotu = 58;
+            ogr1.finalNotu = 85;
+            Console.WriteLine(ogr1.NotGoster());
+            Console.WriteLine("ad: {0} vize notu: {1} final notu: {2} ortalama: {3}",ogr1.AdSoyad,ogr1.vizeNotu,ogr1.finalNotu,ogr1.DiplomaNotu);
+
+            Console.WriteLine("---------------");
+ 
+            Urun forma = new Urun();
+            forma.Marka = "Adidas";
+            forma.Fiyat = -4250;
+
+            Console.WriteLine("Marka: {0} Fiyat: {1}", forma.Marka, forma.Fiyat);
+
         }
     }
 }

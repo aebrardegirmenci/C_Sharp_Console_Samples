@@ -120,6 +120,8 @@ namespace ReferansTipleri
 
         public double finalNotu { get; set; }
 
+        public int Status { get; set; } 
+
         public double NotGoster()
         {
             diplomaNotu = (vizeNotu * 0.4) + (finalNotu * 0.6);
@@ -128,7 +130,7 @@ namespace ReferansTipleri
 
     }
 
-    class Urun
+    internal class Urun
     {
         int urunID = 0; //alan - field
 
@@ -150,6 +152,46 @@ namespace ReferansTipleri
             }
 
         }
+
+        public string BilgiVer()
+        {
+            return "Ürün ID:" + UrunID + " Marka:" + Marka + " Fiyat:" + Fiyat;
+        }   
+
+    }
+
+    enum Renkler
+    {
+        Siyah,
+        Beyaz,
+        Kırmızı,
+        Mavi,
+        Yeşil
+    }
+
+    enum ogrStatus
+    {
+        Aktif=1,
+        Kayıt_Dondurdu=2,
+        Disiplinde=3,
+        Mezun=999
+    }
+
+    class Kitap
+    {
+        public string KitapAdi { get; set; }
+        public int SayfaSayisi { get; set; }
+        public int YayinYili { get; set; }
+        public double Fiyat { get; set; }
+
+    }
+
+    enum KitapKategorisi
+    {
+        Roman,
+        Hikaye,
+        Edebiyat,
+        Bilim_Kurgu
     }
 
     internal class Program
@@ -243,17 +285,60 @@ namespace ReferansTipleri
 
             ogr1.vizeNotu = 58;
             ogr1.finalNotu = 85;
+            ogr1.Status = (int)ogrStatus.Aktif;
+
             Console.WriteLine(ogr1.NotGoster());
             Console.WriteLine("ad: {0} vize notu: {1} final notu: {2} ortalama: {3}",ogr1.AdSoyad,ogr1.vizeNotu,ogr1.finalNotu,ogr1.DiplomaNotu);
+
+            if (ogr1.DiplomaNotu >= 70 && ogr1.Status == (int)ogrStatus.Aktif)
+                Console.WriteLine("Öğrenci mezun olabilir.");
+            else
+                Console.WriteLine("Öğrenci mezun olmak için uygun değildir.");
+
+
+
+            /*
+              a == true (&&) b == true ==> true
+              a == true ve b == false ==> false
+              a == false ve b == true ==> false
+              a == false ve b == false ==> false
+
+              a == true (||) b == true ==> true
+              a == true ya da b == false ==> true
+              a == false ya da b == true ==> true
+              a == false ya da b == false ==> false
+            */
 
             Console.WriteLine("---------------");
  
             Urun forma = new Urun();
             forma.Marka = "Adidas";
             forma.Fiyat = -4250;
+            forma.UrunID = 5;
 
-            Console.WriteLine("Marka: {0} Fiyat: {1}", forma.Marka, forma.Fiyat);
+            //Console.WriteLine("Marka: {0} Fiyat: {1}", forma.Marka, forma.Fiyat);
+            Console.WriteLine(forma.BilgiVer());
 
+            string renk = "Kırmızı";
+            // renk = Renkler.Kırmızı;
+
+            int renkKodu = (int)Renkler.Kırmızı;
+
+            Kitap Kitap1 = new Kitap()
+            {
+                KitapAdi = "Kitap1",
+                SayfaSayisi = 250,
+                YayinYili = 2020
+            };
+
+            Kitap Kitap2 = new Kitap()
+            {
+                KitapAdi = "Kitap2",
+                SayfaSayisi = 300,
+                YayinYili = 2018
+            };
+
+            Console.WriteLine(Kitap2.YayinYili);
         }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\DegiskenTipleri\bin\Debug\DegiskenTipleri.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\DegiskenTipleri\bin\Debug\DegiskenTipleri.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\DegiskenTipleri\bin\Debug\DegiskenTipleri.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\DegiskenTipleri\obj\Debug\DegiskenTipleri.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\DegiskenTipleri\obj\Debug\DegiskenTipleri.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\DegiskenTipleri\obj\Debug\DegiskenTipleri.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\DegiskenTipleri\obj\Debug\DegiskenTipleri.pdb

@@ -300,7 +300,7 @@ namespace Kolleksiyonlar
             string arananMarka = markalar.Where(x => x.Contains("B")).FirstOrDefault();
 
             /*
-           Sondaki .FirstOrDefault() metodu aradığımız kriter ile eşleşen ilk kaydı döndürür.
+            Sondaki .FirstOrDefault() metodu aradığımız kriter ile eşleşen ilk kaydı döndürür.
             Ardığımız kritere uyan kayıt yok ise <T> nin default değerini döndürür.
              
              */
@@ -311,6 +311,7 @@ namespace Kolleksiyonlar
 
             markalar.Sort();// listeyi (alfabetik) sıralar
             markalar.Reverse();// listeyi tersine çevirir
+
 
 
             Console.ReadKey();

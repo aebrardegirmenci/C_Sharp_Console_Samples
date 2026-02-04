@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Canli.cs" />
     <Compile Include="Enums\Cinsiyet.cs" />
     <Compile Include="ICanli.cs" />
     <Compile Include="Interfaces\IUçabilir.cs" />
@@ -52,12 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HesapMakinesi\HesapMakinesi.csproj">
-      <Project>{13cbbc0e-8b13-4e0e-b68e-0f19c0083e3c}</Project>
-      <Name>HesapMakinesi</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

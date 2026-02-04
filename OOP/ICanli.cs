@@ -10,7 +10,7 @@ namespace OOP
 {
     internal interface ICanli
     {
-      //  HesapMakinesi.Program // yukarıa using yazarsak buna gerek kalmıyor.
+      //  HesapMakinesi.Program // yukarıya using yazarsak buna gerek kalmıyor.
 
         string Name { get; set; }
         Enums.Cinsiyet Tur { get; set; }

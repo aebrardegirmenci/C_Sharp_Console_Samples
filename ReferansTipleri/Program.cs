@@ -53,7 +53,6 @@ namespace ReferansTipleri
         {
             return hiz;
         }
-
     }
 
     class Kus
@@ -78,7 +77,6 @@ namespace ReferansTipleri
         {
 
         }
-
     }
 
     class Ogrenci
@@ -120,14 +118,13 @@ namespace ReferansTipleri
 
         public double finalNotu { get; set; }
 
-        public int Status { get; set; } 
+        public int Status { get; set; }
 
         public double NotGoster()
         {
             diplomaNotu = (vizeNotu * 0.4) + (finalNotu * 0.6);
             return (vizeNotu * 0.4) + (finalNotu * 0.6);
         }
-
     }
 
     internal class Urun
@@ -148,18 +145,15 @@ namespace ReferansTipleri
                 if (value < 0)
                     fiyat = value * (-1);
                 else
-                    fiyat = value; 
+                    fiyat = value;
             }
-
         }
 
         public string BilgiVer()
         {
             return "Ürün ID:" + UrunID + " Marka:" + Marka + " Fiyat:" + Fiyat;
-        }   
-
+        }
     }
-
     enum Renkler
     {
         Siyah,
@@ -171,10 +165,10 @@ namespace ReferansTipleri
 
     enum ogrStatus
     {
-        Aktif=1,
-        Kayıt_Dondurdu=2,
-        Disiplinde=3,
-        Mezun=999
+        Aktif = 1,
+        Kayıt_Dondurdu = 2,
+        Disiplinde = 3,
+        Mezun = 999
     }
 
     class Kitap
@@ -183,7 +177,6 @@ namespace ReferansTipleri
         public int SayfaSayisi { get; set; }
         public int YayinYili { get; set; }
         public double Fiyat { get; set; }
-
     }
 
     enum KitapKategorisi
@@ -192,6 +185,52 @@ namespace ReferansTipleri
         Hikaye,
         Edebiyat,
         Bilim_Kurgu
+    }
+
+    interface ICanli
+    {
+        int ID { get; set; }
+        string Name { get; set; }
+        string Tur { get; set; }
+
+        string Beslen(); //public-private yazılmaz.
+        string Ure();
+        string Dead();
+    }
+
+    interface IUcabilir
+    {
+        string Uc(); //methodun adı aynı olabilir parametrenin imzası aynı olamaz.
+                     //string Uc(int irtifa);
+                     //string Uc(int yukseklik, double surat);
+                     //string Uc(int irtifa, int surat);
+    }
+
+    interface IYuzebilir
+    {
+        string Yuz();
+    }
+    //ctrl k d
+    class Canli : ICanli //Implement exception - ctrl .
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Tur { get; set; }
+
+        public string Beslen()
+        {
+            return "Canlı beslendi.";
+        }
+
+        public string Dead()
+        {
+            return "Canlı öldü";
+        }
+
+        public string Ure()
+        {
+            return "Canlı üredi.";
+        }
     }
 
     internal class Program
@@ -211,12 +250,12 @@ namespace ReferansTipleri
                En çok kullanılan referans tipleri: class, delegate, interface, array(dizi), object, string(*)
 
             string(*): string referans tipli olmasına rağmen prtaikte kullanılırken değer tipli gibi davranır.
-            
+
             */
 
             int a = 5;
             int b = 10;
-            
+
             a = b;
 
             b = 50;
@@ -234,7 +273,7 @@ namespace ReferansTipleri
 
             /* Referans Tipleri
             class (sınıf): 
-           
+
             */
 
             int[] intDizi1 = { 1, 2, 3 };
@@ -267,7 +306,7 @@ namespace ReferansTipleri
 
             araba2.marka = "Mercedes";
             araba2.model = "GT43";
-            araba2.fiyat =  1500000;
+            araba2.fiyat = 1500000;
 
             // araba1 = araba2; // araba1 de artık araba2 ile aynı hafıza alanını gösteriyor. araba1 in önceden atanan verilerinin bulunduğu alanın bağlantısı koptu. GC tarafından bu veriler yok edilecek.
 
@@ -288,7 +327,7 @@ namespace ReferansTipleri
             ogr1.Status = (int)ogrStatus.Aktif;
 
             Console.WriteLine(ogr1.NotGoster());
-            Console.WriteLine("ad: {0} vize notu: {1} final notu: {2} ortalama: {3}",ogr1.AdSoyad,ogr1.vizeNotu,ogr1.finalNotu,ogr1.DiplomaNotu);
+            Console.WriteLine("ad: {0} vize notu: {1} final notu: {2} ortalama: {3}", ogr1.AdSoyad, ogr1.vizeNotu, ogr1.finalNotu, ogr1.DiplomaNotu);
 
             if (ogr1.DiplomaNotu >= 70 && ogr1.Status == (int)ogrStatus.Aktif)
                 Console.WriteLine("Öğrenci mezun olabilir.");
@@ -310,7 +349,7 @@ namespace ReferansTipleri
             */
 
             Console.WriteLine("---------------");
- 
+
             Urun forma = new Urun();
             forma.Marka = "Adidas";
             forma.Fiyat = -4250;

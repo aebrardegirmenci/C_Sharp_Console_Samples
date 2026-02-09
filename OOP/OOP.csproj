@@ -43,7 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Bitki.cs" />
+    <Compile Include="Classes\Bocekler.cs" />
     <Compile Include="Classes\Canli.cs" />
+    <Compile Include="Classes\Devekusu.cs" />
+    <Compile Include="Classes\Hayvan.cs" />
+    <Compile Include="Classes\Kuslar.cs" />
+    <Compile Include="Classes\Memeliler.cs" />
+    <Compile Include="Classes\Ordek.cs" />
+    <Compile Include="Classes\Penguen.cs" />
+    <Compile Include="Classes\Surungen.cs" />
     <Compile Include="Enums\Cinsiyet.cs" />
     <Compile Include="ICanli.cs" />
     <Compile Include="Interfaces\IUçabilir.cs" />

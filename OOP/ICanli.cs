@@ -18,5 +18,6 @@ namespace OOP
         string Beslen();
         string Ure();
         string Dead();
+
     }
 }

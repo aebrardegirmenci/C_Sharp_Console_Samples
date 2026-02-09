@@ -26,5 +26,11 @@ namespace OOP.Classes
         {
             return "Canlı üredi.";
         }
+
+        public string Beslen(Canli c)
+        {
+            return c.GetType().ToString() + " " + c.Name + " " + c.Tur.ToString() + " beslendi.";
+        }
+
     }
 }

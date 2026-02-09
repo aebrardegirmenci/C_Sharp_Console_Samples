@@ -211,7 +211,7 @@ namespace ReferansTipleri
         string Yuz();
     }
     //ctrl k d
-    class Canli : ICanli //Implement exception - ctrl .
+   internal class Canli : ICanli //Implement exception - ctrl .
     {
         public int ID { get; set; }
         public string Name { get; set; }

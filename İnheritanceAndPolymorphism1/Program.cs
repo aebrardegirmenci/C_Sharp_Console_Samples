@@ -37,7 +37,13 @@ namespace İnheritanceAndPolymorphism1
             pdf2.Print();
             word1.Print();
 
+            Console.WriteLine("-----------------");
 
+            Printer.Print(d1);
+            Printer.Print(d2);
+            Printer.Print(pdf1);
+            Printer.Print(pdf2);
+            Printer.Print(word1);
         }
     }
 }

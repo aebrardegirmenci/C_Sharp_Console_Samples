@@ -46,6 +46,7 @@
     <Compile Include="Models\Document.cs" />
     <Compile Include="Models\PDFDocument.cs" />
     <Compile Include="Models\PowerPointDocument.cs" />
+    <Compile Include="Models\Printer.cs" />
     <Compile Include="Models\TXTDocument.cs" />
     <Compile Include="Models\WordDocument.cs" />
     <Compile Include="Program.cs" />

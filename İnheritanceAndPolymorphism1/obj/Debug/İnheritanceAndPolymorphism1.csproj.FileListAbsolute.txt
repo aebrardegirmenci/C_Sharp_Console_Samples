@@ -1,0 +1,7 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\İnheritanceAndPolymorphism1\bin\Debug\İnheritanceAndPolymorphism1.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\İnheritanceAndPolymorphism1\bin\Debug\İnheritanceAndPolymorphism1.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\İnheritanceAndPolymorphism1\bin\Debug\İnheritanceAndPolymorphism1.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\İnheritanceAndPolymorphism1\obj\Debug\İnheritanceAndPolymorphism1.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\İnheritanceAndPolymorphism1\obj\Debug\İnheritanceAndPolymorphism1.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\İnheritanceAndPolymorphism1\obj\Debug\İnheritanceAndPolymorphism1.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\İnheritanceAndPolymorphism1\obj\Debug\İnheritanceAndPolymorphism1.pdb

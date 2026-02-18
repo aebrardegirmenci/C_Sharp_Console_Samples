@@ -1,0 +1,7 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\SayilariTopla\bin\Debug\SayilariTopla.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\SayilariTopla\bin\Debug\SayilariTopla.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\SayilariTopla\bin\Debug\SayilariTopla.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\SayilariTopla\obj\Debug\SayilariTopla.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\SayilariTopla\obj\Debug\SayilariTopla.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\SayilariTopla\obj\Debug\SayilariTopla.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRENCİ YEDEK\aleyna\Kodlar\Konsol\KonsolUygulamalarım\SayilariTopla\obj\Debug\SayilariTopla.pdb
